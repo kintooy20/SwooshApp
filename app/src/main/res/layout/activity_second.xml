@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kent.gimenez.com.swoosh.SecondActivity">
+
+
+    <ImageView
+        android:id="@+id/ivSwoosh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/desired_league_bg"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:text="Desired League:"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textColor="#FFFF"
+         android:id="@+id/tvDesiredLeague"
+        android:layout_below="@+id/ivBackground"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/tvMens"
+            android:text="@string/text_mens"
+            android:textAllCaps="false"
+            android:textSize="23sp"
+            android:onClick="ButtonMens"
+            android:background="@drawable/button_border"
+            android:textColor="#FFF"
+
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/tvDesiredLeague"
+            android:layout_alignLeft="@+id/tvWomens"
+            android:layout_alignStart="@+id/tvWomens"
+            android:layout_alignRight="@+id/tvWomens"
+            android:layout_alignEnd="@+id/tvWomens" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="16dp"
+        android:id="@+id/tvWomens"
+        android:text="@string/text_womens"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:onClick="ButtonWomens"
+        android:layout_below="@+id/tvMens"
+        android:background="@drawable/button_border"
+        android:textColor="#FFF"
+
+        />
+
+    <TextView
+        android:id="@+id/tvImAtext"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="I am a:"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+
+        android:layout_above="@+id/tvResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:layout_alignTop="@+id/btnNext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/tvCoed"
+        android:text="@string/text_co_ed"
+        android:onClick="ButtonCoed"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:background="@drawable/button_border"
+        android:textColor="#FFF"
+
+        android:layout_below="@+id/tvWomens"
+        android:layout_alignLeft="@+id/tvWomens"
+        android:layout_alignStart="@+id/tvWomens"
+        android:layout_alignRight="@+id/tvWomens"
+        android:layout_alignEnd="@+id/tvWomens" />
+
+
+
+    <Button
+        android:onClick="Next"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/btnNext"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:alpha=".50"
+        android:background="@drawable/button_border"
+        android:textColor="#FFF"
+
+
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/tvCoed"
+        android:layout_alignStart="@+id/tvCoed"
+        android:layout_alignRight="@+id/tvCoed"
+        android:layout_alignEnd="@+id/tvCoed"
+
+
+        />
+
+
+
+</RelativeLayout>

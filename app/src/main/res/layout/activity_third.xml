@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kent.gimenez.com.swoosh.SecondActivity">
+
+
+    <ImageView
+        android:id="@+id/ivBasket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/beginner_baller_bg"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBackground"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:text="I am a:"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+
+
+        android:id="@+id/textView3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView3">
+
+
+        <Button
+            android:id="@+id/btnBeginner"
+            android:layout_width="134dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ivBackground"
+            android:layout_margin="16dp"
+            android:layout_marginTop="97dp"
+            android:onClick="Beginner"
+            android:background="@drawable/button_border"
+            android:text="Beginner"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btnBaller"
+            android:layout_width="134dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ivBackground"
+            android:text="Baller"
+            android:textSize="20sp"
+            android:onClick="Baller"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/button_border"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Finish"
+        android:alpha=".50"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:textColor="#FFFF"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/button_border"
+        android:onClick="Finish"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+
+
+</RelativeLayout>
